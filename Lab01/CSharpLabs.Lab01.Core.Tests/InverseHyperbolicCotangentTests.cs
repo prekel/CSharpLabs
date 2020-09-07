@@ -14,10 +14,10 @@ namespace CSharpLabs.Lab01.Core.Tests
         [Test]
         public void Test1()
         {
-            var arth = new InverseHyperbolicCotangent();
+            //var arth = new InverseHyperbolicCotangent();
 
-            var a1 = arth.Calculate(1.1, 0.01, 100);
-            var a2 = Math.Acosh(1.1);
+            //var a1 = arth.Calculate(1.1, 0.01, 100);
+            //var a2 = Math.Acosh(1.1);
         }
     }
 }
