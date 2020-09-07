@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 
 namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
 {

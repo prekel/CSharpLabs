@@ -34,6 +34,7 @@ namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
                 upSa[i] = xDiv2iPlus1;
                 xDiv2iPlus1 /= x * x;
             }
+
             var up = Avx.LoadVector256(upSa);
 
             // down <- (1, 3, 5, 7)

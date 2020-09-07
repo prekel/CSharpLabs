@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
 
@@ -47,14 +46,15 @@ namespace CSharpLabs.Lab01.Console
             {
                 try
                 {
-                    var calcs = new List<Type> {typeof(ArcothAvx), typeof(ArcothLinq), typeof(ArcothNaive), typeof(ArcothOptimized)};
+                    var calcs = new List<Type>
+                        {typeof(ArcothAvx), typeof(ArcothLinq), typeof(ArcothNaive), typeof(ArcothOptimized)};
                     var defaultCalc = typeof(ArcothOptimized);
                     if (Avx.IsSupported)
                     {
                         defaultCalc = typeof(ArcothAvx);
                     }
 
-                    System.Console.WriteLine($"Доступные вычислители:");
+                    System.Console.WriteLine("Доступные вычислители:");
                     var i = 1;
                     foreach (var c in calcs)
                     {
@@ -63,7 +63,7 @@ namespace CSharpLabs.Lab01.Console
 
                     System.Console.Write($"Введите номер вычислителя [{defaultCalc.Name}]: ");
                     var choosen = System.Console.ReadLine();
-                    if (string.IsNullOrEmpty(choosen))
+                    if (String.IsNullOrEmpty(choosen))
                     {
                         Calc = (Activator.CreateInstance(defaultCalc) as ITaylorSeries)!;
                     }
@@ -90,7 +90,7 @@ namespace CSharpLabs.Lab01.Console
             System.Console.WriteLine("(arcth aka arcoth aka Inverse Hyperbolic Cotangent)");
             System.Console.WriteLine("с помощью ряда Тейлора");
             System.Console.WriteLine();
-            
+
             Inputs();
             InputCalc();
 

@@ -9,10 +9,10 @@ namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
             var sum = 0d;
             N = 0;
 
-            var up = 1/x;
+            var up = 1 / x;
             var down = 1;
             var xx = x * x;
-            
+
             while (N < maxN)
             {
                 var curr = up / down;
