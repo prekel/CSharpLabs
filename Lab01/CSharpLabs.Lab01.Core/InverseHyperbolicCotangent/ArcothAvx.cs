@@ -4,13 +4,13 @@ using System.Runtime.Intrinsics.X86;
 
 namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
 {
-    public class AvxDiv : Abstract
+    public class ArcothAvx : AbstractArcoth
     {
-        protected override unsafe double CalculateImpl(double x, double eps, int maxN)
+        protected override unsafe double CalculateImpl(double x, double stepThreshold, int maxN)
         {
             if (!Avx.IsSupported)
             {
-                Status |= TaylorSeriesStatus.NotSupported;
+                Status = TaylorSeriesStatus.NotSupported;
                 return Double.NaN;
             }
 
@@ -39,12 +39,14 @@ namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
 
             var sum = Vector256<double>.Zero;
 
-            for (N = 0; N < maxN; N += vectorSize)
+            N = 0;
+            while (N < maxN)
             {
                 var div = Avx.Divide(up, down);
                 sum = Avx.Add(sum, div);
                 var last = div.GetElement(vectorSize - 1);
-                if (Math.Abs(last) < eps)
+                N += vectorSize;
+                if (Math.Abs(last) < stepThreshold)
                 {
                     break;
                 }
@@ -57,14 +59,7 @@ namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
             var resultSa = stackalloc double[vectorSize];
             Avx.Store(resultSa, sum);
 
-            if (N >= maxN)
-            {
-                Status |= TaylorSeriesStatus.TooManyIterations;
-            }
-            else
-            {
-                Status |= TaylorSeriesStatus.Success;
-            }
+            Status = N >= maxN ? TaylorSeriesStatus.TooManyIterations : TaylorSeriesStatus.Success;
 
             return resultSa[0] + resultSa[1] + resultSa[2] + resultSa[3];
         }

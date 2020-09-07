@@ -9,6 +9,6 @@ namespace CSharpLabs.Lab01.Core
 
         public double ReferenceFunction(double x);
 
-        public double Calculate(double x, double eps, int maxN);
+        public double Calculate(double x, double stepThreshold, int maxN = 10000);
     }
 }

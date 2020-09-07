@@ -2,7 +2,7 @@
 
 namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
 {
-    public abstract class Abstract : ITaylorSeries
+    public abstract class AbstractArcoth : ITaylorSeries
     {
         public static bool IsInDomain(double x) => Math.Abs(x) > 1;
 
@@ -11,16 +11,16 @@ namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
         public static double ReferenceFunction(double x) => Math.Log((x + 1) / (x - 1)) / 2;
         double ITaylorSeries.ReferenceFunction(double x) => ReferenceFunction(x);
 
-        public double Calculate(double x, double eps, int maxN)
+        public double Calculate(double x, double stepThreshold, int maxN = 10000)
         {
             N = -1;
             Status = TaylorSeriesStatus.None;
             if (IsInDomain(x))
             {
-                return CalculateImpl(x, eps / 10, maxN);
+                return CalculateImpl(x, stepThreshold, maxN);
             }
 
-            Status |= TaylorSeriesStatus.NotInDomain;
+            Status = TaylorSeriesStatus.NotInDomain;
             return Double.NaN;
         }
 
@@ -30,6 +30,6 @@ namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
 
         protected static double CurrentStep(double x, double n) => 1 / ((2 * n + 1) * Math.Pow(x, 2 * n + 1));
 
-        protected abstract double CalculateImpl(double x, double eps, int maxN);
+        protected abstract double CalculateImpl(double x, double stepThreshold, int maxN);
     }
 }

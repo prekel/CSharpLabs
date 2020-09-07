@@ -2,7 +2,6 @@ using System;
 
 namespace CSharpLabs.Lab01.Core
 {
-    [Flags]
     public enum TaylorSeriesStatus
     {
         None = 0,
