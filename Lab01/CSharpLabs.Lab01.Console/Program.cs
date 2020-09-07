@@ -47,8 +47,8 @@ namespace CSharpLabs.Lab01.Console
             {
                 try
                 {
-                    var calcs = new List<Type> {typeof(ArcothAvx), typeof(ArcothLinq), typeof(ArcothNaive)};
-                    var defaultCalc = typeof(ArcothNaive);
+                    var calcs = new List<Type> {typeof(ArcothAvx), typeof(ArcothLinq), typeof(ArcothNaive), typeof(ArcothOptimized)};
+                    var defaultCalc = typeof(ArcothOptimized);
                     if (Avx.IsSupported)
                     {
                         defaultCalc = typeof(ArcothAvx);
@@ -86,6 +86,11 @@ namespace CSharpLabs.Lab01.Console
             System.Console.InputEncoding = Encoding.UTF8;
             System.Console.OutputEncoding = Encoding.UTF8;
 
+            System.Console.WriteLine("Вычисление обратного гиперболического котангенса");
+            System.Console.WriteLine("(arcth aka arcoth aka Inverse Hyperbolic Cotangent)");
+            System.Console.WriteLine("с помощью ряда Тейлора");
+            System.Console.WriteLine();
+            
             Inputs();
             InputCalc();
 
