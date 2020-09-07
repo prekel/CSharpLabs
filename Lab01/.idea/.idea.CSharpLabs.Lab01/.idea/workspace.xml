@@ -23,32 +23,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e468ca-40bb-4df6-8cda-c2181865d557" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01_Прекель.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01_Прекель.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01_Прекель.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab01_Прекель1.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Console/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Console/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/InverseHyperbolicCotangentTheoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/InverseHyperbolicCotangentTheoryTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/AbstractArcoth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/AbstractArcoth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/ArcothAvx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/ArcothAvx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/ArcothNaive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/ArcothNaive.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/ArcothOptimized.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/ArcothOptimized.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/TaylorSeriesStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpLabs.Lab01.Core/TaylorSeriesStatus.cs" afterDir="false" />
+    <list default="true" id="09e468ca-40bb-4df6-8cda-c2181865d557" name="Default Changelist" comment="report">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharpLabs.Lab01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpLabs.Lab01.Core.Tests/.idea/.idea.CSharpLabs.Lab01/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01_Прекель.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01_Прекель.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01_Прекель.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01_Прекель.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +45,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/vladislav/Projects/CSharpLabs/Lab01/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/AbstractArcoth.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vladislav/Projects/CSharpLabs/Lab01/CSharpLabs.Lab01.Core/InverseHyperbolicCotangent/ArcothAvx.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CSharpLabs.Lab01.Console/Program.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1hAz26rHc0R82kmc2kzzodBUV3q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -65,6 +63,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -117,8 +117,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599468475093</updated>
-      <workItem from="1599468477078" duration="104000" />
+      <workItem from="1599468477078" duration="3610000" />
     </task>
+    <task id="LOCAL-00001" summary="report">
+      <created>1599468653350</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599468653350</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,27 +147,97 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="report" />
+    <option name="LAST_COMMIT_MESSAGE" value="report" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1599468572729">
+    <state width="1877" height="357" key="GridCell.Tab.0.bottom" timestamp="1599471038561">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1599468572729" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1599468572729">
+    <state width="1877" height="357" key="GridCell.Tab.0.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038561" />
+    <state width="1877" height="357" key="GridCell.Tab.0.center" timestamp="1599471038561">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1019@0.0.1920.1019" timestamp="1599468572729" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1599468572729">
+    <state width="1877" height="357" key="GridCell.Tab.0.center/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038561" />
+    <state width="1877" height="357" key="GridCell.Tab.0.left" timestamp="1599471038561">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1019@0.0.1920.1019" timestamp="1599468572729" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1599468572729">
+    <state width="1877" height="357" key="GridCell.Tab.0.left/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038561" />
+    <state width="1877" height="357" key="GridCell.Tab.0.right" timestamp="1599471038561">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1019@0.0.1920.1019" timestamp="1599468572729" />
+    <state width="1877" height="357" key="GridCell.Tab.0.right/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038561" />
+    <state width="1877" height="357" key="GridCell.Tab.1.bottom" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.1.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.1.center" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.1.center/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.1.left" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.1.left/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.1.right" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.1.right/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.2.bottom" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.2.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.2.center" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.2.center/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.2.left" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.2.left/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.2.right" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.2.right/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.3.bottom" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.3.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.3.center" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.3.center/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.3.left" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.3.left/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.3.right" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.3.right/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.4.bottom" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.4.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.4.center" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.4.center/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.4.left" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.4.left/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
+    <state width="1877" height="357" key="GridCell.Tab.4.right" timestamp="1599471038562">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="357" key="GridCell.Tab.4.right/0.0.1920.1019@0.0.1920.1019" timestamp="1599471038562" />
     <state x="461" y="154" key="SettingsEditor" timestamp="1599468580359">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="461" y="154" key="SettingsEditor/0.0.1920.1019@0.0.1920.1019" timestamp="1599468580359" />
+    <state x="623" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1599470365841">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="623" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1019@0.0.1920.1019" timestamp="1599470365841" />
   </component>
 </project>
