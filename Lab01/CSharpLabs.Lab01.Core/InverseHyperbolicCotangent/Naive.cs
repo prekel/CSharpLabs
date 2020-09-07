@@ -5,34 +5,28 @@ namespace CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
 {
     public class Naive : Abstract
     {
-        public override double Calculate(double x, double eps, int maxN)
+        protected override double CalculateImpl(double x, double eps, int maxN)
         {
-            if (!IsInDomain(x))
-            {
-                Status |= TaylorSeriesStatus.NotInDomain;
-            }
-
             var sum = 0d;
-            foreach (var n in Enumerable.Range(0, maxN))
+            for (N = 0; N < maxN; N++)
             {
-                var curr = CurrentStep(x, n);
+                var curr = CurrentStep(x, N);
                 sum += curr;
-                if (!(Math.Abs(curr) < eps))
+                if (Math.Abs(curr) < eps)
                 {
-                    continue;
+                    break;
                 }
-
-                Status |= TaylorSeriesStatus.Success;
-                N = n;
-                return sum;
             }
 
-            Status |= TaylorSeriesStatus.TooManyIterations;
-            N = maxN;
+            if (N >= maxN)
+            {
+                Status |= TaylorSeriesStatus.TooManyIterations;
+            }
+            else
+            {
+                Status |= TaylorSeriesStatus.Success;
+            }
             return sum;
         }
-
-        public override int N { get; protected set; }
-        public override TaylorSeriesStatus Status { get; protected set; } = TaylorSeriesStatus.None;
     }
 }

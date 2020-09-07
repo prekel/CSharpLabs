@@ -6,9 +6,9 @@ namespace CSharpLabs.Lab01.Core
     public enum TaylorSeriesStatus
     {
         None = 0,
-        Undefined = 1,
-        Success = 2,
-        TooManyIterations = 4,
-        NotInDomain = 8
+        Success = 1,
+        TooManyIterations = 2,
+        NotInDomain = 4,
+        NotSupported = 8
     }
 }

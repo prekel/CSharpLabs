@@ -1,4 +1,4 @@
-﻿using CSharpLabs.Lab01.Core;
+﻿using CSharpLabs.Lab01.Core.InverseHyperbolicCotangent;
 
 namespace CSharpLabs.Lab01.Console
 {
@@ -7,8 +7,12 @@ namespace CSharpLabs.Lab01.Console
         private static void Main(string[] args)
         {
             System.Console.WriteLine("Hello World!");
-            
+
             System.Console.WriteLine("x      | f(x)       | sigma(x)     | n ");
+
+            var avxdiv = new AvxDiv();
+            var tc = Abstract.ReferenceFunction(1.2);
+            var ac = avxdiv.Calculate(1.2, 0.0002, 1000);
 
             //var c = new InverseHyperbolicCotangent();
 
