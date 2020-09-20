@@ -15,15 +15,15 @@ namespace CSharpLabs.Lab01.Core.Benchmark
             new List<AbstractArcoth> {new ArcothAvx(), new ArcothLinq(), new ArcothNaive(), new ArcothOptimized()};
 
         [Benchmark]
-        public void Benchmark1()
+        public double Benchmark1()
         {
-            Calc.Calculate(1.1, 1e-8, 1000);
+            return Calc.Calculate(1.1, 1e-8, 1000);
         }
 
         [Benchmark]
-        public void Benchmark2()
+        public double Benchmark2()
         {
-            Calc.Calculate(1.01, 1e-6, 1000);
+            return Calc.Calculate(1.01, 1e-6, 1000);
         }
     }
 }
