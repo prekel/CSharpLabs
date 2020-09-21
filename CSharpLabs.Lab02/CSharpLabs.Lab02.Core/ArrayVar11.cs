@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CSharpLabs.Lab02.Core
 {
-    public class Class1
+    public class ArrayVar11
     {
-        public double[] Array { get; }
-
-        public Class1(double x, int n)
+        public ArrayVar11(double x, int n)
         {
             Array = new double[n];
             var up = 1d;
@@ -20,16 +19,22 @@ namespace CSharpLabs.Lab02.Core
             }
         }
 
-        public Class1(params double[] elements)
+        public ArrayVar11(IEnumerable<double> elements) => Array = elements.ToArray();
+
+        public ArrayVar11(params double[] elements)
         {
             Array = new double[elements.Length];
             elements.CopyTo(Array, 0);
         }
 
+        public double[] Array { get; }
+
         public int Count => Array.Length;
 
+        public bool IsHasAtLeastTwoZeroes() => Array.Count(p => p == 0) >= 2;
+
         public double SumFromFirstZeroToLastZeroLinq() =>
-            Array.Count(p => p == 0) < 2
+            !IsHasAtLeastTwoZeroes()
                 ? throw new ApplicationException("Нет двух нулевых элементов")
                 : Array.SkipWhile(p => p != 0)
                     .Reverse()
@@ -38,7 +43,7 @@ namespace CSharpLabs.Lab02.Core
 
         public double SumFromFirstZeroToLastZero()
         {
-            if (Array.Count(p => p == 0) < 2)
+            if (!IsHasAtLeastTwoZeroes())
             {
                 throw new ApplicationException("Нет двух нулевых элементов");
             }
