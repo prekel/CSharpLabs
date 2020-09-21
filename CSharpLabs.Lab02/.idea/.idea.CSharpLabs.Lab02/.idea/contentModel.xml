@@ -19,38 +19,20 @@
       <e p="CSharpLabs.Lab02.Console" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CSharpLabs.Lab02.Console.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CSharpLabs.Lab02.Console.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
       </e>
       <e p="CSharpLabs.Lab02.Core" t="IncludeRecursive">
         <e p="ArrayVar11.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CSharpLabs.Lab02.Core.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CSharpLabs.Lab02.Core.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
       </e>
       <e p="CSharpLabs.Lab02.Core.Tests" t="IncludeRecursive">
         <e p="ArrayVar11Tests.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CSharpLabs.Lab02.Core.Tests.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="CSharpLabs.Lab02.Core.Tests.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
       </e>
       <e p="CSharpLabs.Lab02.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
