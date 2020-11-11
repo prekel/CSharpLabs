@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace CSharpLabs.Lab02.Core
@@ -16,6 +17,29 @@ namespace CSharpLabs.Lab02.Core
                 Array[i] = up / down;
                 up *= x;
                 down *= i + 1;
+            }
+        }
+
+        public ArrayVar11(int x)
+        {
+            Array = new double[x];
+            Array[0] = 0;
+            Array[1] = 1;
+            for (var i = 2; i < x; i++)
+            {
+                Array[i] = Array[i - 1] + Array[i - 2];
+            }
+        }
+
+        public ArrayVar11(double n, string path)
+        {
+            using (var sr = new StreamReader(path))
+            {
+                Array = sr
+                    .ReadToEnd()
+                    .Split(new[] {" "}, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(Double.Parse)
+                    .ToArray();
             }
         }
 
