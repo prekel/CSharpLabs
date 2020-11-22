@@ -12,7 +12,8 @@ static Student InputStudent()
         var name = Console.ReadLine();
         var group = Console.ReadLine();
         var marks = Console.ReadLine()?
-            .Split(new[] {','}, StringSplitOptions.TrimEntries).Select(Int32.Parse)
+            .Split(new[] {','}, StringSplitOptions.TrimEntries)
+            .Select(Int32.Parse)
             .ToArray();
         if (name == null || group == null || marks == null)
         {
@@ -34,6 +35,11 @@ for (var i = 0; i < 10; i++)
 {
     list.Add(InputStudent());
 }
+
+list.Sort();
+
+Console.WriteLine(String.Join("\n", list));
+Console.WriteLine();
 
 var gt4 = list.Where(s => s.AverageScore() > 4).ToList();
 Console.WriteLine(gt4.Any() ? String.Join("\n", gt4) : "Нет таких элементов");
