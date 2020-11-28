@@ -29,8 +29,7 @@ Console.WriteLine();
 var q1 = cars
     .Join(services, car => car.ServiceId, service => service.ServiceId,
         (car, service) => new {car, service})
-    .OrderBy(carservice => carservice.car.Manufacturer)
-    .ToList();
+    .OrderBy(carservice => carservice.car.Manufacturer);
 Console.WriteLine(String.Join("\n", q1));
 Console.WriteLine();
 
