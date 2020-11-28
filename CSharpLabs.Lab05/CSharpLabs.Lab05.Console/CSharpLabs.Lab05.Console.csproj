@@ -5,4 +5,8 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CSharpLabs.Lab05.Core\CSharpLabs.Lab05.Core.csproj" />
+    </ItemGroup>
+
 </Project>
