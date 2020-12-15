@@ -1,19 +1,34 @@
 ﻿open System
+open System.Diagnostics
 open System.IO
+open CSharpLabs.Lab01.Core.InverseHyperbolicCotangent
+open CSharpLabs.Lab01.Core
 
-let printTotalFileBytes path =
+let calcAsync (x, eps) =
     async {
-        let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
-        let fileName = Path.GetFileName(path)
-        printfn $"File {fileName} has %d{bytes.Length} bytes"
+        let calc = ArcothAvx()
+        let a = calc.Calculate(x, eps, Int32.MaxValue)
+        return (x, a, calc.N, calc.Status)
     }
 
 [<EntryPoint>]
 let main argv =
-    argv
-    |> Seq.map printTotalFileBytes
-    |> Async.Parallel
-    |> Async.Ignore
-    |> Async.RunSynchronously
+    let sw = Stopwatch()
+    sw.Start()
+    let a =
+        [ 1.0 .. 0.0000000001 .. 1.000001 ]
+        |> Seq.map (fun i -> (i, 1e-9))
+        |> Seq.map calcAsync
+        |> Async.Parallel
+        |> Async.RunSynchronously
+    printfn "%f" sw.Elapsed.TotalMilliseconds
+
+    printfn
+        "%s"
+        (a
+         |> Array.take 10
+         |> Array.map (fun (x, res, n, status) ->
+             $" {x, 20} | {ArcothAvx.ReferenceFunction(x), 20} | {res, 20} | {n, 10} | {status, 20}")
+         |> String.concat "\n")
 
     0
