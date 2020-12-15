@@ -5,7 +5,7 @@ namespace CSharpLabs.Lab04.Core
 {
     public class Journal
     {
-        private readonly List<JournalEntry> List = new List<JournalEntry>();
+        private readonly List<JournalEntry> List = new();
 
         public void StudentCountChanged(StudentCollection.StudentListHandlerEventArgs eventArgs)
         {

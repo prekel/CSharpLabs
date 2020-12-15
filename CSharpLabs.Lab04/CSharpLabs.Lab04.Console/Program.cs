@@ -15,6 +15,7 @@ collection1.OnStudentReferenceChanged += (_, eventArgs) => journal.StudentRefere
 collection2.OnStudentCountChanged += (_, eventArgs) => journal.StudentCountChanged(eventArgs);
 collection2.OnStudentReferenceChanged += (_, eventArgs) => journal.StudentReferenceChanged(eventArgs);
 
+
 collection1.AddDefaults();
 collection2.AddDefaults();
 
