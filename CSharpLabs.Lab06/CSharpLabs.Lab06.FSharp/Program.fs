@@ -6,7 +6,7 @@ open CSharpLabs.Lab01.Core
 
 let calcAsync (x, eps) =
     async {
-        let calc = ArcothAvx()
+        let calc = ArcothLinq()
         let a = calc.Calculate(x, eps, Int32.MaxValue)
         return (x, a, calc.N, calc.Status)
     }

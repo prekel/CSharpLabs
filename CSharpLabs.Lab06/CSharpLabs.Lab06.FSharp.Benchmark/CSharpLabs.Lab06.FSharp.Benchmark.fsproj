@@ -6,7 +6,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="ArcothArcothBenchmark.fs"/>
         <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" Version="0.12.1"/>
     </ItemGroup>
 
     <ItemGroup>
