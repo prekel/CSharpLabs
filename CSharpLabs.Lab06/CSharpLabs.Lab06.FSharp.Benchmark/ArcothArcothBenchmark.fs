@@ -19,14 +19,14 @@ type ArcothArcothBenchmark() =
         [| 1.0000000 .. 0.0000001 .. 1.0000120 |]
 
     member val public CalcCreators: (unit -> AbstractArcoth) list = [ fun () -> upcast (ArcothAvx())
-                                                                      fun () -> upcast (ArcothLinq())
-                                                                      fun () -> upcast (ArcothNaive())
+                                                                      //fun () -> upcast (ArcothLinq())
+                                                                      //fun () -> upcast (ArcothNaive())
                                                                       fun () -> upcast (ArcothOptimized()) ] with get, set
 
     [<ParamsSource("CalcCreators")>]
     member val public CalcCreator: (unit -> AbstractArcoth) = fun () -> upcast (ArcothAvx()) with get, set
 
-    member val public Degrees = [ 1 .. 24 ] with get, set
+    member val public Degrees = [ 1 .. Environment.ProcessorCount * 2 ] with get, set
 
     [<ParamsSource("Degrees")>]
     member val public Degree = 0 with get, set
