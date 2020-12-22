@@ -18,7 +18,7 @@ let main argv =
         [ 1.0 .. 0.0000000001 .. 1.000001 ]
         |> Seq.map (fun i -> (i, 1e-9))
         |> Seq.map calcAsync
-        |> (fun r -> Async.Parallel(r, 1))
+        |> (fun r -> Async.Parallel(r, 12))
         |> Async.RunSynchronously
 
     printfn "%f" sw.Elapsed.TotalMilliseconds
